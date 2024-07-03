@@ -31,12 +31,13 @@ start_date = os.getenv("TICK_START", "2024-06-28T10:00+02:00")
 mongo_host = os.getenv("TULIP_MONGO", "localhost:27017")
 flag_regex = os.getenv("FLAG_REGEX", "[A-Z0-9]{31}=")
 mongo_server = f'mongodb://{mongo_host}/'
-vm_ip = os.getenv("VM_IP", "10.60.4.1")
+vm_ip = os.getenv("VM_IP", "10.60.3.1")
 
-services = [{"ip": vm_ip, "port": 5555, "name": "cheese_cheats"},
-            {"ip": vm_ip, "port": 3000, "name": "gadget_horse"},
-            {"ip": vm_ip, "port": 8000, "name": "gabibbi_be"},
-            {"ip": vm_ip, "port": 9999, "name": "mine_clicker"},
+services = [{"ip": vm_ip, "port": 80, "name": "capp"},
+            {"ip": vm_ip, "port": 1337, "name": "ticket"},
+            {"ip": vm_ip, "port": 3000, "name": "ccmanager"},
+            {"ip": vm_ip, "port": 5000, "name": "ccmanager"},
+            {"ip": vm_ip, "port": 8080, "name": "fixme"},
            # {"ip": vm_ip, "port": 1883, "name": "scadnet_bin"},
            # {"ip": vm_ip, "port": -1,   "name": "other"}]
             ]
