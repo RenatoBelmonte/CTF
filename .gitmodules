@@ -1,0 +1,6 @@
+[submodule "tulip"]
+	path = tulip
+	url = https://github.com/OpenAttackDefenseTools/tulip
+[submodule "DestructiveFarm"]
+	path = DestructiveFarm
+	url = https://github.com/DestructiveVoice/DestructiveFarm
