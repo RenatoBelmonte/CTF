@@ -1,4 +1,4 @@
-IP=10.60.4.1
+IP=10.60.3.1
 EMAIL="renatobelmonte.rb@gmail.com"
 echo "the target IP is: $IP"
 ssh-keygen -R $IP
