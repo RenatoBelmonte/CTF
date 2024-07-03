@@ -8,7 +8,7 @@ echo $local_dir
 remote_dir="/root/pcap"
 
 # Indirizzo IP della macchina remota
-remote_ip="10.60.4.1"
+remote_ip="10.60.3.1"
 echo $remote_ip
 
 # Utente della macchina remota
