@@ -6,6 +6,10 @@ Next, update the configuration files using `runme.sh`
 Tulip is used to analyze the pcap files produced on the VM through the `tulip_vm.sh` launched only once. 
 On the host, `tulip_loc.sh` is runned in background to download the packets and show on [localhost:3333](https://localhost:3333) the analyzing result.
 
+So you can build the docker
+```bash
+docker-compose up -d --build
+```
 Then, start the service through `tulip/start.sh`
 ## RUN DESRUCTIVE FARM 
 Destructive farm is used to perform an exploit against all other teams, then it will submit the obtained flags.
