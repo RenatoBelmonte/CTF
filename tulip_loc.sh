@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory locale dove salvare i file pcap
-local_dir="$HOME/Desktop/tulip/shared"
+local_dir="$HOME/Desktop/CTF/tulip/shared"
 echo $local_dir
 
 # Directory remota da cui copiare i file pcap
