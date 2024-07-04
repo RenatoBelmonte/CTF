@@ -16,7 +16,7 @@ Destructive farm is used to perform an exploit against all other teams, then it 
 Firstly, launch the server through `DestructiveFarm/server/start_server.sh` and connect to [localhost:5000](https://localhost:5000) 
 Then, you can launch also the exploit:
 ```bash
-./start_sploit.py my_sploit.py -u http://0.0.0.0:5000
+./start_sploit.py sploit.py -u http://0.0.0.0:5000
 ```
 
 ## TODO
