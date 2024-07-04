@@ -1,1 +1,6 @@
 ./start_sploit.py spl_example.py -u http://0.0.0.0:5000
+Agggiungere un firewall --> A/D pdf from cyberchallenge
+
+- sudo ufw deny 22    
+- Vedere tutte le porte aperte sulla VM --> sudo netstat -tuln
+- docker compose down (up -d)
