@@ -33,11 +33,10 @@ flag_regex = os.getenv("FLAG_REGEX", "[A-Z0-9]{31}=")
 mongo_server = f'mongodb://{mongo_host}/'
 vm_ip = os.getenv("VM_IP", "10.60.3.1")
 
-services = [{"ip": vm_ip, "port": 80, "name": "capp"},
-            {"ip": vm_ip, "port": 1337, "name": "ticket"},
-            {"ip": vm_ip, "port": 3000, "name": "ccmanager"},
-            {"ip": vm_ip, "port": 5000, "name": "ccmanager"},
-            {"ip": vm_ip, "port": 8080, "name": "fixme"},
+services = [{"ip": vm_ip, "port": 8443  , "name": "cc_calendar"},
+            {"ip": vm_ip, "port": 3001  , "name": "cc_forms"},
+            {"ip": vm_ip, "port": 3000  , "name": "exccel"},
+            {"ip": vm_ip, "port": 1337  , "name": "inlook"},
            # {"ip": vm_ip, "port": 1883, "name": "scadnet_bin"},
            # {"ip": vm_ip, "port": -1,   "name": "other"}]
             ]
