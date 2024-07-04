@@ -1,0 +1,21 @@
+services:
+    api:
+        build: backend
+        container_name: cc-calendar-backend
+        restart: unless-stopped
+        volumes:
+            - './backend/www:/var/www'
+            - './backend/db:/var/db'
+        environment:
+            - 'CRYPT_SECRET=f4b74f3e1db2ed57680a3637553ea931f0047c39edb296b6b7aee4eac7910123'
+
+    frontend:
+        build: frontend
+        container_name: cc-calendar-frontend
+        restart: unless-stopped
+        volumes:
+            - './frontend/db:/app/db'
+        ports:
+            - '8443:443'
+        environment:
+            - 'CRYPT_SECRET=f4b74f3e1db2ed57680a3637553ea931f0047c39edb296b6b7aee4eac7910123'
