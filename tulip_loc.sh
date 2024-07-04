@@ -16,6 +16,7 @@ remote_user="root"
 
 # Loop infinito per copiare i nuovi file pcap
 while true; do
+	rm tulip/shared/*
     # Copia dei nuovi file pcap dalla macchina remota
     scp -r root@10.60.3.1:/root/pcap/* ~/Desktop/CTF/tulip/shared
 

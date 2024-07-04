@@ -14,6 +14,7 @@ mkdir -p $dir
 
 # Loop infinito per creare file pcap ogni 2 minuti
 while true; do
+	rm /root/pcap/*
     # Creazione del nome del file con timestamp
     filename=$(date +"%Y%m%d%H%M%S").pcap
 
