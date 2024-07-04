@@ -17,7 +17,7 @@ remote_user="root"
 # Loop infinito per copiare i nuovi file pcap
 while true; do
     # Copia dei nuovi file pcap dalla macchina remota
-    scp -r $remote_user@$remote_ip:$remote_dir/* $local_dir
+    scp -r root@10.60.3.1:/root/pcap/* ~/Desktop/CTF/tulip/shared
 
     # Attesa prima del prossimo controllo
     sleep 60
